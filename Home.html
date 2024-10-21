@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Sponsorship Search</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+  <header>
+    <h1>Find Your Ideal Sponsorship Opportunity</h1>
+  </header>
+
+  <section class="search-filters">
+    <h2>Search Filters</h2>
+    <div class="filters">
+      <select id="location" class="filter">
+        <option value="">Select Location</option>
+        <option value="north">North Region</option>
+        <option value="south">South Region</option>
+        <option value="east">East Region</option>
+        <option value="west">West Region</option>
+      </select>
+
+      <select id="club-type" class="filter">
+        <option value="">Select Club Type</option>
+        <option value="tech">Tech</option>
+        <option value="arts">Arts</option>
+        <option value="business">Business</option>
+        <option value="sports">Sports</option>
+      </select>
+
+      <select id="sponsorship-type" class="filter">
+        <option value="">Select Sponsorship Type</option>
+        <option value="financial">Financial</option>
+        <option value="in-kind">In-Kind</option>
+        <option value="mentorship">Mentorship</option>
+      </select>
+
+      <label class="switch">
+        <input type="checkbox" id="verified-only">
+        <span class="slider"></span>
+        Verified Clubs Only
+      </label>
+
+      <button id="search-button">Search</button>
+    </div>
+  </section>
+
+  <section class="search-results">
+    <h2>Search Results</h2>
+    <div class="cards-container" id="cards-container">
+      <!-- Card templates will be injected here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Student Clubs Sponsorship. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
